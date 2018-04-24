@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iWy-t8-9Ca">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="i1r-dE-UhT">
+            <objects>
+                <viewController id="iWy-t8-9Ca" customClass="ViewController" customModule="MKTileOverlayDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J6T-5s-NJY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SaE-rN-SKk">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mm4-g8-Vsb" firstAttribute="bottom" secondItem="SaE-rN-SKk" secondAttribute="bottom" id="IvM-g3-xxc"/>
+                            <constraint firstItem="SaE-rN-SKk" firstAttribute="top" secondItem="mm4-g8-Vsb" secondAttribute="top" id="Mgf-cM-zFQ"/>
+                            <constraint firstItem="mm4-g8-Vsb" firstAttribute="trailing" secondItem="SaE-rN-SKk" secondAttribute="trailing" id="qOR-N9-Miq"/>
+                            <constraint firstItem="SaE-rN-SKk" firstAttribute="leading" secondItem="mm4-g8-Vsb" secondAttribute="leading" id="rdK-5Y-eTe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mm4-g8-Vsb"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="SaE-rN-SKk" id="DBg-Ux-sZL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irV-hX-gHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="65" y="153"/>
+        </scene>
+    </scenes>
+</document>
